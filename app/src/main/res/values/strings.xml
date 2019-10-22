@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Boba</string>
+    <string name="boba_name">Nama boba</string>
+    <string name="boba_detail">Detail boba</string>
+    <string name="boba_price">boba harga</string>
+    <string name="seller">seller</string>
+</resources>
