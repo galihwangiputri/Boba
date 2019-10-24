@@ -1,8 +1,27 @@
 package recycleview.picodiploma.dicoding.com.boba;
 
-public class Boba {
+class Boba {
     private String name;
     private String detail;
+
+    public String getInstagram() {
+        return instagram;
+    }
+
+    public void setInstagram(String instagram) {
+        this.instagram = instagram;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    private String instagram;
+    private String rating;
     private int photo;
 
     public String getPrice() {

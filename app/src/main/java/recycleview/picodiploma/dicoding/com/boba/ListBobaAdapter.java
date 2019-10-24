@@ -1,5 +1,7 @@
 package recycleview.picodiploma.dicoding.com.boba;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,7 +40,7 @@ public class ListBobaAdapter extends RecyclerView.Adapter<ListBobaAdapter.ListVi
 
     @Override
     public void onBindViewHolder(@NonNull final ListViewHolder holder, int position) {
-        Boba boba = listBoba.get(position);
+        final Boba boba = listBoba.get(position);
         Glide.with(holder.itemView.getContext())
                 .load(boba.getPhoto())
                 .apply(new RequestOptions().override(55,55))
@@ -46,10 +48,14 @@ public class ListBobaAdapter extends RecyclerView.Adapter<ListBobaAdapter.ListVi
         holder.tvName.setText(boba.getName());
         holder.tvDetail.setText(boba.getDetail());
 
+        final Context cone = holder.itemView.getContext();
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 onItemClickCallback.onItemClicked(listBoba.get(holder.getAdapterPosition()));
+
             }
         });
     }

@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">Boba</string>
+    <string name="app_name">Hi Boba</string>
     <string name="boba_name">Nama boba</string>
     <string name="boba_detail">Detail boba</string>
     <string name="boba_price">boba harga</string>
-    <string name="seller">seller</string>
+    <string name="nama_penulis">nama_penulis</string>
+    <string name="email">email</string>
+    <string name="rating">rating</string>
+    <string name="instagram">instagram</string>
+    <string name="actionbar_title">Hi Boba</string>
+    <string name="version">Hi Boba Application Version 1.2.0</string>
+    <string name="copyright_2019">Copyright 2019</string>
+    <string name="landing_text">landing text</string>
 </resources>
