@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Landing_Activity"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/land_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_light"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        android:text="@string/landing_text"/>
+
+    <TextView
+        android:id="@+id/land_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_light"
+        android:layout_below="@id/land_text"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:text="@string/landing_text"/>
+
+    <Button
+        android:id="@+id/btn_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Come in!"
+        android:layout_below="@id/land_notes"
+        android:layout_alignEnd="@id/land_text"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_regular"/>
+
+</RelativeLayout>
